@@ -1,0 +1,241 @@
+:root{
+	--font-size:1.5rem;
+	--font-family:"roca", sans-serif;
+	--font-family-paragraph:"IBM Plex Mono", monospace;
+	--font-weight:100;
+	--color-main:white;
+	--color-secondary:black;
+}
+
+*{
+	color:black;
+}
+
+body{
+	background:var(--color-main);
+	margin:0;
+	font-family: var(--font-family);
+	font-weight: 100;
+	font-style: normal;
+}
+
+/* --------------------- */
+/* FONT STYLES */
+/* --------------------- */
+
+h1{
+	font-size: calc(var(--font-size) * 5);
+	font-weight:var(--font-weight);
+	line-height: calc(var(--font-size) * 4.5);
+	text-align:left;
+	display:inline;
+	width:auto;
+	text-transform: uppercase;
+}
+
+h2{
+	font-size: calc(var(--font-size) * 3);
+	font-weight:var(--font-weight);
+	line-height: calc(var(--font-size) * 3);
+	text-align:left;
+	display:inline;
+	width:auto;
+	text-transform: uppercase;
+}
+
+h3{
+	font-size: var(--font-size);
+	font-weight:calc(var(--font-weight) * 3);
+	line-height: calc(var(--font-size) *1.25);
+	text-transform: uppercase;
+}
+
+h3.bottom-align{
+	position:absolute;
+	bottom:0;
+}
+
+nav h4{
+	font-size: calc(var(--font-size) * 0.65);
+	font-weight:calc(var(--font-weight) * 4);
+	text-transform: uppercase;
+	letter-spacing: 0.05rem;
+	margin:5px 0;
+}
+
+p{
+	font-family: var(--font-family-paragraph);
+	font-size: calc(var(--font-size) * 0.65);
+	font-weight:300;
+}
+
+/* --------------------- */
+/* SITEWIDE CONTAINERS */
+/* --------------------- */
+
+header{
+	display:block;
+	max-height:100vh;
+	height:50vh;
+	margin:30px;
+}
+
+/* --------------------- */
+/* MAIN PAGE */
+/* --------------------- */
+
+#main-header{
+	max-height:85vh;
+	height:85vh;
+	background-image: url("images/Fruits_DatesAndFigs-expanded.png");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin:0;
+	top:0;
+	left:0;
+}
+
+#header-text-box{
+	position:relative;
+	top:10%;
+	margin-left:50px;
+	width:50%;
+	height:85%;
+}
+
+#main-content{
+	margin:10% 0;
+}
+
+nav {
+	position:sticky;
+	margin-left:50px;
+	margin-top:50px;
+	top: 50px;
+	max-width:30vw;
+}
+
+#loading-bar{
+	display:flex;
+	flex-direction: row;
+	justify-content: left;
+	margin:0 0 10px;
+}
+
+.loading-circle{
+	margin:0 5px 0 0;
+	display: relative;
+	width:15px;
+	height:15px;
+	border: solid 1.5px var(--color-secondary);
+	border-radius: 100%;
+	background:none;
+}
+
+.loaded-circle{
+	margin:0 5px 0 0;
+	display: relative;
+	width:15px;
+	height:15px;
+	border: solid 1.5px var(--color-secondary);
+	border-radius: 100%;
+	background:var(--color-secondary);
+}
+
+.text-block{
+	position:relative;
+	margin:50px 50px 50px 0px;
+	left:45%;
+	max-width:45%;
+}
+
+.big-image{
+	max-width:100vw;
+	margin:0;
+}
+
+img {
+	max-width:100vw;
+}
+
+
+/* --------------------- */
+/* INDEX PAGE */
+/* --------------------- */
+
+.header-gather{
+	position: relative;
+	display:flex;
+	align-items: baseline;
+	margin:auto;
+	top:35%;
+	width:85%;
+}
+
+.header-gather h1, .sub-header {
+    display: inline;
+    margin: 0 25px;
+}
+
+#dynamic-sub-head {
+    display: inline-block;
+    position: relative;
+    text-decoration: underline 3px;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Fade Out + Move Up */
+.fade-up-out {
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+/* Fade In + Move Down */
+.fade-up-in {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.landing-button{
+	margin:auto;
+	background:var(--color-main);
+	text-align:center;
+	padding-bottom:150px;
+}
+
+.landing-button button{
+	height:auto;
+	background:#E5E5E5;
+	border-radius:5px;
+	font-family: "roca", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size:15px;
+	padding:5px 10px 0px 10px;
+	border: 1.5px solid var(--color-secondary);
+}
+
+button a{
+	text-decoration: none;
+}
+
+.landing-button button:hover{
+	background:var(--color-secondary);
+	color:var(--color-main);
+}
+
+#landing-image{
+	margin:0;
+	position:relative;
+	max-width:100%;
+	height:auto;
+	text-align:center;
+	overflow:hidden;
+}
+
+#landing-image img{
+	max-width:100%;
+	height:auto;
+	display:block;
+}
