@@ -256,6 +256,28 @@ span {
 	display: block;
 }
 
+hr{
+	border:solid 0.5px var(--color-tertiary);
+}
+
+footer {
+	width:50vw;
+	background:blue;
+	margin:auto;
+	text-align:center;
+	margin-bottom:25vh;
+}
+
+button{
+	background: linear-gradient(
+        to right,
+		#ffbf77,
+		#fc8e86
+    ) ;
+	padding:15px;
+	font-style: var(--font-family);
+}
+
 /* --------------------- */
 /* INDEX PAGE */
 /* --------------------- */
