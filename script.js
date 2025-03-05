@@ -1,3 +1,21 @@
+/* make the navbar sticky */ 
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navbar = document.getElementById("navbar");
+
+    // Calculate navbar's position relative to the document, not just its parent
+    const navOffset = navbar.getBoundingClientRect().top + window.scrollY - 50;
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY >= navOffset) {
+            navbar.classList.add("fixed");
+        } else {
+            navbar.classList.remove("fixed");
+        }
+    });
+});
+
+
 /* code pulled from https://stackoverflow.com/questions/75828238/using-javascript-to-have-a-text-line-cycle-between-various-text
 cycles the text on the initial page */
 
@@ -42,3 +60,4 @@ function cycleWords() {
 
 // Run every 2 seconds
 setInterval(cycleWords, 2000);
+
