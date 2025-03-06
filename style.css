@@ -77,11 +77,13 @@ nav h4{
 }
 
 h6 {
-	font-size: calc(var(--font-size) * 0.6);
+	font-size: calc(var(--font-size) * 0.45);
 	font-weight:calc(var(--font-weight) * 3);
-	font-style: italic !important;
+	line-height: calc(var(--font-size) * 0.6);
 	margin:5px 50px;
 	position:absolute;
+	max-width:20%;
+	text-align:left;
 }
 
 h6.small-image-cap{
@@ -308,11 +310,8 @@ button{
 	left:25px;
 	text-decoration: underline 2.5px ;
 	text-underline-offset: 5px;
-} */
-
-.flex-item{
-	margin:5px;
-}
+	gap: 10px;
+} 
 
 
 /* .header-gather h1, .sub-header {
