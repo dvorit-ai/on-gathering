@@ -22,6 +22,10 @@ body{
 	font-style: normal;
 }
 
+/* .user-10{
+	opacity:0;
+} */
+
 /* --------------------- */
 /* FONT STYLES */
 /* --------------------- */
@@ -121,10 +125,19 @@ header{
 	max-height:85vh;
 	width:100vw;
 	height:85vh;
+	margin:0;
+	top:0;
+	left:0;
+}
+
+.background-image{
+	position:absolute;
 	background-image: url("images/Fruits_DatesAndFigs-expanded.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
+	width:100vw;
+	height:85vh;
 	margin:0;
 	top:0;
 	left:0;
@@ -141,7 +154,7 @@ header{
 #main-content{
 	position:relative;
 	margin:0;
-	top:50px;
+	top:25px;
 }
 
 nav {
