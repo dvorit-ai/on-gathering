@@ -14,6 +14,13 @@
 	color:black;
 }
 
+/* html{
+	cursor: pointer;
+  	cursor: help;
+  	cursor: progress;
+  	cursor: url("images/glowing-cursor-2.png"), auto;
+} */
+
 body{
 	background:var(--color-main);
 	margin:0;
