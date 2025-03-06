@@ -14,9 +14,13 @@
 	color:black;
 }
 
-/* html{
-  	cursor: url("images/basker_cursor_small.png"), auto;
-} */
+html{
+  	cursor: url("images/basker_cursor_32.png") 7 7, auto;
+}
+
+a, button, [role="button"], .clickable {
+    cursor: url("images/basker_cursor_open_32.png") 7 7, pointer;
+}
 
 body{
 	background:var(--color-main);
@@ -244,7 +248,7 @@ nav.fixed{
 	vertical-align:text-top;
 	width:15px;
 	height:15px;
-	cursor:pointer;
+	cursor: url("images/basker_cursor_open_32.png") 7 7, pointer;
 }
 
 .citation:hover{
